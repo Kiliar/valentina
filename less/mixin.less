@@ -1,0 +1,75 @@
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal, @im : 0 ) when ( @im = 1 ) {
+	.font ( @size, @color, @weight, @style)!important;	
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 400 ) and (@style = normal) {
+	font-family: @font-normal;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 400 ) and (@style = italic) {
+	font-family: @font-italic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 500 ) and (@style = normal) {
+	font-family: @font-medium;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 500 ) and (@style = italic) {
+	font-family: @font-mediumitalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 300 ) and (@style = normal) {
+	font-family: @font-light;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 300 ) and (@style = italic) {
+	font-family: @font-lightitalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 100 ) and (@style = normal) {
+	font-family: @font-extrathin;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 100 ) and (@style = italic) {
+	font-family: @font-extrathinitalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 200 ) and (@style = normal) {
+	font-family: @font-thin;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 200 ) and (@style = italic) {
+	font-family: @font-thinitalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 600 ) and (@style = normal) {
+	font-family: @font-bold;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 600 ) and (@style = italic) {
+	font-family: @font-bolditalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 700 ) and (@style = normal) {
+	font-family: @font-bold;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 700 ) and (@style = italic) {
+	font-family: @font-bolditalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 800 ) and (@style = normal) {
+	font-family: @font-bold;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 800 ) and (@style = italic) {
+	font-family: @font-bolditalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 900 ) and (@style = normal) {
+	font-family: @font-black;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @weight = 900 ) and (@style = italic) {
+	font-family: @font-blackitalic;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @style = hand ) {
+	font-family: @font-hand;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) when ( @style = text ) {
+	font-family: @font-text;
+}
+.font ( @size : 12px, @color : #000, @weight : 400, @style: normal ) {
+	font-size: @size;
+	color: @color;
+	line-height: @size + 2px;
+	/* font-weight: @weight; */
+}
+.animate( @t:0.5s ) {
+	transition: all @t ease-in-out;
+}
+.scrolloff {
+	pointer-events: none;
+}

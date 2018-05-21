@@ -1,0 +1,49 @@
+@import "core";
+.way {
+	&__sub-heading{
+		color: #636363;
+		font-family: Arial;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 36px;
+		text-transform: uppercase;
+	}
+	&__text{
+		color: #505050;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		padding-left: 40px;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 30px;
+			margin-top: -5px;
+			height: 30px;
+			background-position: 50%;
+			background-repeat: no-repeat;
+		}
+		&_phone:before {
+			background-image: url("../img/address-icon-phone.png");
+
+		}
+		&_gps:before{
+			background-image: url("../img/address-icon-gps.png");
+			
+		}
+		&_email:before{
+			background-image: url("../img/address-icon-email.png");
+			
+		}
+		&_address:before{
+			background-image: url("../img/address-icon-address.png");
+			
+		}
+		&_b,b {
+			font-weight: 700;
+		}
+	}
+}

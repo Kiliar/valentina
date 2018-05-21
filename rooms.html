@@ -1,0 +1,230 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/room.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/uikit.min.js"></script>
+		<script src="js/components/grid.js"></script>
+		<script src="js/components/slideset.min.js"></script>
+		<script src="js/components/slideshow.js"></script>
+		<script src="js/components/slideshow-fx.min.js"></script>
+
+		<script src="js/custom.js"></script>
+		<meta charset="UTF-8">
+		<title>Валентина</title>
+	</head>
+	<body>
+		<!-- HADER -->
+		<header class="header">
+			<div class="uk-container uk-container-center header__container">
+				<a href="/" class="header__logo">
+					<img src="img/header-logo.png" alt="header-logo">
+				</a>
+				<div class="header__slogan">
+					<p class="header__slogan-text">
+						Будьте нашим гостем на Азовском море в Кирилловке!
+					</p>
+					<address class="header__slogan-address">
+						Запорожская область, Акимовский район, пгт. Кирилловка Коса Пересыпь.
+					</address>
+				</div>
+				<address class="uk-float-right header__phone-numbers">
+					<b>(097)</b> 871-89-92 <br><b>(050)</b> 566-55-64
+				</address>
+				<!-- NAVBAR -->
+				<div class="uk-container uk-container-center navbar__canvas">
+					<nav class="uk-navbar navbar" id="navbar-header">
+						<ul class="uk-navbar-nav uk-hidden-large navbar__menu navbar__menu_dropdown">
+							<li class="uk-parent navbar__item navbar__item_dropdown-button" data-uk-dropdown="justify:'#navbar-header'">
+								<a href="#" class="navbar__link navbar__link_dropdown-togle">
+									<span class="uk-navbar-toggle"></span>Меню
+								</a>
+								<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom navbar__dropdown-container">
+									<ul class="uk-nav uk-nav-navbar navbar__menu navbar__menu_dropdown ">
+										<li class="navbar__item">
+											<a class="navbar__link navbar__link_home navbar__link_dropdown" href="/valentina/">	
+												Домой
+											</a>
+										</li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/about.html">О базе отдыха</a></li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/rooms.html">Номера и цены</a></li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/gallery.html">Фотогалерея</a></li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/stoks.html">Акции</a></li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/way.html">как добраться</a></li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/3d.html">3D тур</a></li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/feedback.html">Отзывы</a></li>
+										<li class="navbar__item navbar__item_dropdown"><a class="navbar__link navbar__link_dropdown" href="/valentina/address.html">Контакты</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<ul class="uk-navbar-nav uk-flex uk-flex-center uk-visible-large navbar__menu ">
+							<li class="navbar__item">
+								<a class="navbar__link navbar__link_home" href="/valentina/">	
+									Домой
+								</a>
+							</li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/about.html">О базе отдыха</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/rooms.html">Номера и цены</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/gallery.html">Фотогалерея</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/stoks.html">Акции</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/way.html">как добраться</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/3d.html">3D тур</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/feedback.html">Отзывы</a></li>
+							<li class="navbar__item"><a class="navbar__link" href="/valentina/address.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /NAVBAR -->
+			</div>
+		</header>
+		<!-- /HADER -->
+		<nav class="breadcrumb">
+			<div class="uk-container uk-container-center">
+				<ul class="uk-breadcrumb breadcrumb__menu">
+					<li class="breadcrumb__item"><a class="breadcrumb__link" href="">главная</a></li>
+					<li class="uk-active breadcrumb__item"><span class="breadcrumb__text">о базе отдыха</span></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- ROOMS -->
+		<section class="section section_rooms">
+			<div class="uk-container uk-container-center uk-flex uk-flex-column">
+				<h2  class="section__heading section__heading_sep rooms__header">
+					Наши номера
+				</h2>
+				<ul class="uk-grid uk-grid-collapse rooms__list">
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-1.png" alt="rooms-1">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера Эконом</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">300 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-2.png" alt="rooms-2">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера люкс</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">700 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-3.png" alt="rooms-3">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера люкс</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">700 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-4.png" alt="rooms-4">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера Эконом</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">300 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-1.png" alt="rooms-1">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера Эконом</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">300 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-2.png" alt="rooms-2">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера люкс</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">700 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-3.png" alt="rooms-3">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера люкс</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">700 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 rooms__item">
+						<figure class="rooms__figure">
+							<div class="rooms__img-canvas">
+								<img class="rooms__img" src="img/rooms-4.png" alt="rooms-4">
+							</div>
+							<figcaption class="rooms__caption-canvas">
+								<div class="rooms__heading-row">
+									<h3 class="rooms__heading">Номера Эконом</h3>
+									<p class="rooms__heading-text">до 3-х человек</p>
+								</div>
+								<p class="rooms__text-row">300 грн/сутки</p>
+								<a href="/valentina/room.html" class="rooms__button">Подробнее</a>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- /ROOMS -->
+		<!-- FOOTER -->
+		<footer class="footer footer_border">
+			<p class="uk-text-center footer__text">
+				&copy; 2015 База отдыха "велентина"
+			</p>
+		</footer>
+		<!-- /FOOTER -->
+	</body>
+	</html>
